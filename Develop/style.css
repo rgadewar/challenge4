@@ -1,0 +1,142 @@
+:root {
+  /* declare a variable with `--` syntax */
+  --dark: #121211;
+  --bgcolor: lightgray;
+  --text_color: rgb(143, 227, 227)
+}
+
+* {
+  padding: 0;
+  margin: .50px;
+  font-family: Serriff;
+}
+
+body {
+  background-color: var(--bgcolor);
+  /* Turns this element into a flexbox */
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, Calibri,  BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+   /* Defines how to distribute the empty space between child elements */
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+  color:var(--bgcolor);
+  padding: 5px 5px;
+}
+
+h1 {
+  /* display: flex;
+  justify-content: center; */
+  font-size: 3rem;
+  /* color:var(--text_color); */
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+/* header section {
+  display: flex;
+  float: right;
+  align-items: center;
+} */
+input{
+  cursor: pointer;
+}
+
+
+input[type="text"], textarea {
+
+  background-color : #3b1097; 
+  color: white;
+  height: 30px;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  text-align: center;
+  display:block;
+  margin-bottom:20px;
+  cursor: pointer;
+
+}
+
+.questions {
+	display:none;
+}  
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  background-color: var(--dark);
+  color: white;
+  align-items: flex-end;
+}
+
+.container {
+  width: 100%;
+  margin-left: 5%;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  row-gap: 10px; 
+  height: 30%;
+  margin-bottom: 0.5%;
+}
+
+.float-child-right {
+  width: 100%;
+  float: left;
+  /* border: 2px solid black; */
+  margin:0 auto;
+  border-top-style: none;
+  border-bottom-style: none;
+  border-right-style: none; 
+  padding-left: 20px;
+  /* height: 50% */
+}
+
+main {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+img {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: .5px solid black;
+}
+  
+.float-child-left{
+  width: 100%;
+  border-top-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  text-align: right;
+  margin-right: 10px;
+  /* sheight: 50% */
+}
+
+#startQuiz
+{font-size: 60px;
+  border-radius: 12px;}
+#player-form, .message{ display:none;}
