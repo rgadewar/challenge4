@@ -53,18 +53,16 @@ var submitButton = document.getElementById('submit');
 // // saved-score
 var savedScoreEl = document.querySelector("#saved-score");
 
-var timeLeft = 30;
+var timeLeft = 75;
 var runningQuestion = 0;
 var correctQuestions = 0;
-// var message =
-//   'Some say the world will end in 🔥, Some say in ice. From what I’ve tasted of desire, I hold with those who favor fire. But if it had to perish twice, I think I know enough of hate. To say that for destruction ice, Is also great, And would suffice.';
-// var words = message.split(' ');
 
 function countdown() {
   var timeInterval = setInterval(function () {
       timerEl.textContent = 'Time: '  + timeLeft--;
       questionsEl.style.display="block";
       startQuizEl.style.display="none";
+      document.getElementById('card').style.display="none";
       // playerformsEl.style.display="none";
       // startQuizEl.style.display="block"
       // startQuizLabelEl.style.display="none";
@@ -75,11 +73,11 @@ function countdown() {
         playerformsEl.style.display="block";
         timerEl.textContent ='';
         runningQuestion = 0; 
-        timeLeft = 30;
+        timeLeft = 75;
         // savedScoreEl.textContent= correctQuestions;
         // window.location.href ='highscore.html'
-
-       
+        document.getElementById("message").style.display="none";
+        document.getElementById("about-me-details").style.display="none";
       }
       else if (runningQuestion == 5 ){
         clearInterval(timeInterval);
@@ -88,11 +86,13 @@ function countdown() {
         playerformsEl.style.display="block";
         timerEl.textContent ='';
         runningQuestion = 0; 
-        timeLeft = 30;
+        timeLeft = 75;
         // savedScoreEl.textContent= correctQuestions;
         // window.location.href ='highscore.html'
-
+        document.getElementById("message").style.display="none";
+        document.getElementById("about-me-details").style.display="none";
       }
+      document.getElementById("scoreNum").innerHTML = "Your Final score is" + correctQuestions + ".";
   }, 1000);
 }
 
@@ -130,24 +130,22 @@ for (var i = 0; i < Anchors.length ; i++)
         console.log("Correct");
         correctQuestions++;
         console.log("correctQuestions" + correctQuestions);
-        // runningQuestion++;
-        timeLeft = timeLeft + 5;
-        console.log(timeLeft)
+        console.log(timeLeft);
+        document.querySelector("#message").textContent = "Correct!";
       }
       else{
-        if(timeLeft-5 > 0){
-        timeLeft = timeLeft - 5;
+        if(timeLeft-10 > 0){
+        timeLeft = timeLeft - 10;
+        document.querySelector("#message").textContent = "Wrong!";
         }
       }
       runningQuestion++;
     if(runningQuestion < 5) {
         showQuestions();
       }
+      
     }, false);
-  
 }
-
-document.querySelector('.message').style.display="none";
 
 signUpButton.addEventListener("click", function(event) {
   event.preventDefault();
@@ -155,12 +153,11 @@ signUpButton.addEventListener("click", function(event) {
   var user1 =
   {
   firstName: firstNameInput.value,
-  score: timeLeft,
+  score: correctQuestions,
     
 };
   highscores.push(user1);
-// localStorage.setItem("highscores", JSON.stringify(highscores));
   localStorage.setItem("highscores", JSON.stringify(highscores));
   playerformsEl.style.display="none";
-  // renderMessage();
+  window.location.href ='highscore.html'
 });

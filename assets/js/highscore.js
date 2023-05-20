@@ -1,9 +1,3 @@
-// var firstNameInput = document.querySelector("#player-name");
-// var lastNameInput = document.querySelector("#last-name");
-// var emailInput = document.querySelector("#email");
-// var passwordInput = document.querySelector("#password");
-// var signUpButton = document.querySelector("#submit");
-// var playerformsEl = document.querySelector('#player-form');
 var scoreView = document.querySelector(".scoresCard");
 
 var highscores = JSON.parse(localStorage.getItem("highscores")) || [];

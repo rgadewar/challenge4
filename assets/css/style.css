@@ -1,7 +1,7 @@
 :root {
   /* declare a variable with `--` syntax */
   --dark: #13293d;
-  --bgcolor: rgb(185, 182, 182);
+  --bgcolor: white;
   --text_color: rgb(143, 227, 227)
 }
 
@@ -36,8 +36,8 @@ header {
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   font-size: 3rem;
   /* color:var(--text_color); */
 }
@@ -103,6 +103,9 @@ footer {
 }
 
 .float-child-right {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   width: 100%;
   float: right;
   margin:0 auto;
@@ -137,6 +140,8 @@ img {
 {
   font-size: 30px;
   border-radius: 12px;
+  background-color: #3b1097;
+  color: white;
 }
 
 #player-form, .message{ display:none;}
