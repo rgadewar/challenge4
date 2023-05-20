@@ -125,7 +125,7 @@ for (var i = 0; i < Anchors.length ; i++)
 {
     Anchors[i].addEventListener("click", function (event) 
     { 
-      // event.stopPropagation();
+      event.stopPropagation();
       if(event.currentTarget.value === questions[runningQuestion].correct){
         console.log("Correct");
         correctQuestions++;
