@@ -62,11 +62,9 @@ function countdown() {
       timerEl.textContent = 'Time: '  + timeLeft--;
       questionsEl.style.display="block";
       startQuizEl.style.display="none";
-      document.getElementById('card').style.display="none";
       if(timeLeft ===0 ){
         clearInterval(timeInterval);
         questionsEl.style.display="none";
-        // startQuizEl.style.display="block";
         playerformsEl.style.display="block";
         timerEl.textContent ='';
         runningQuestion = 0; 
@@ -82,12 +80,10 @@ function countdown() {
         timerEl.textContent ='';
         runningQuestion = 0; 
         timeLeft = 75;
-        // savedScoreEl.textContent= correctQuestions;
-        // window.location.href ='highscore.html'
         document.getElementById("message").style.display="none";
         document.getElementById("about-me-details").style.display="none";
       }
-      document.getElementById("scoreNum").innerHTML = "Your Final score is" + correctQuestions + ".";
+      document.getElementById("scoreNum").innerHTML = "Your Final score is " + correctQuestions + ".";
   }, 1000);
 }
 

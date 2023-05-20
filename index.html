@@ -9,49 +9,42 @@
   </head>
   <body>
     <!-- Header -->
-  <header>
-    <section class="display-inline portflio-image">
-      <div class="col-9">
-        <a href="highscore.html" id="highScore">View High Scores</a>
-      </div>
-      <div class="card">
-      </div>
+<header>
+  <section class="display-inline portflio-image">
+      <a href="highscore.html" id="highScore">View High Scores</a>
+  </section>
+  <!-- Navbar -->
+  <section>
+    <h3 id="countdown"></h3>
     </section>
-    <!-- Navbar -->
-    <section>
-      <h2 id="countdown"></h2>
-      </section>
 </header>
 <main>
-<section class="container">
-  <section id="about-me-details" class="float-child-right">
-      <div id="card">
-        <section><h3>Coding Quiz Challenge</h3></section>
-        <p> Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds</p>
-          <br>
-        </button>
-        <button id="startQuiz" >Start Quiz!</button>
-      </div>
-      <div class="questions">
-        <p id="quizQuestion">Question</button></p>
-        <input type = "button" name = "radio1" id = "button1" placeholder="Your text"  class="quizBtn"></input> 
-        <input type = "button" name = "radio2" id = "button2" placeholder="Your text"  class="quizBtn"></input> 
-        <input type = "button" name = "radio3" id = "button3" placeholder="Your text"  class="quizBtn"></input> 
-        <input type = "button" name = "radio4" id = "button4" placeholder="Your text"  class="quizBtn"></input> 
-      </div> 
-      <span id="message"></span>  
+  <section class="container">
+    <section id="about-me-details" class="float-child-right">
+        <section><h3>Coding Quiz Challenge</h3>
+          <p> Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds</p>
+          <button id="startQuiz" >Start Quiz!</button>
+        </section>
+        <section class="questions">
+          <p id="quizQuestion">Question</button></p>
+          <input type = "button" name = "radio1" id = "button1" placeholder="Your text"  class="quizBtn"></input> 
+          <input type = "button" name = "radio2" id = "button2" placeholder="Your text"  class="quizBtn"></input> 
+          <input type = "button" name = "radio3" id = "button3" placeholder="Your text"  class="quizBtn"></input> 
+          <input type = "button" name = "radio4" id = "button4" placeholder="Your text"  class="quizBtn"></input> 
+        </section> 
+        <span id="message"></span>  
     </section>
-  
-    <section id="player-form" class="float-child-right">
-      <h3 id="player-form-h3">All done!!</h3>
-      <span id="scoreNum">Your Final score is: </span>
-      <form id="form">
-        Enter Initials: <input type="text" id="player-name" placeholder="Initials" />
-        <button id="submit">Submit</button>
-      </form>
-      </section>      
-    </main>
-    <script src="./assets/js/script.js"></script>
+    
+  <section id="player-form" class="float-child-right">
+    <h3 id="player-form-h3">All done!!</h3>
+    <span id="scoreNum"></span>
+    <form id="form">
+    Enter Initials: <input type="text" id="player-name" placeholder="Initials" />
+    <button id="submit">Submit</button>
+    </form>
+  </section>      
+</main>
+  <script src="./assets/js/script.js"></script>
   <!-- Footer -->
   <footer>
     <h4>

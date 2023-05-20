@@ -61,7 +61,20 @@ header section {
 }
 
 /* input[type="button"], textarea { */
-.quizBtn, #startQuiz, #submit {
+/* .quizBtn, #startQuiz, #submit { */
+.button{
+  background-color : #3b1097; 
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #73AD21;
+  text-align: center;
+  display:block;
+  margin-bottom:20px;
+  width: 200px;
+  cursor: pointer;
+}
+.quizBtn{
   background-color : #3b1097; 
   color: white;
   height: 40px;
@@ -74,7 +87,7 @@ header section {
   cursor: pointer;
 }
 
-.quizBtn:hover {
+.quizBtn:hover, #startQuiz:hover, #submit:hover {
   background-color: #e30eea;
 }
 
