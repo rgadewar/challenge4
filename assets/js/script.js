@@ -36,7 +36,7 @@ var questions = [{
 }];
 
 var timerEl = document.getElementById('countdown');
-var startQuizEl = document.getElementById('startQuiz');
+var startQuizEl = document.getElementById('quizDetails');
 // var startQuizLabelEl = document.getElementById('startQuizLabel');
 var mainEl = document.getElementById('main');
 var quizQuestionEl = document.getElementById('quizQuestion');
@@ -50,6 +50,12 @@ var startButton = document.getElementById("startQuiz");
 var submitButton = document.getElementById('submit');
 var highScoreButton = document.getElementById('highScore');
 
+var questionInput1 = document.querySelector('input[name="radio1"]')
+var questionInput2 = document.querySelector('input[name="radio2"]')
+var questionInput3 = document.querySelector('input[name="radio3"]')
+var questionInput4 = document.querySelector('input[name="radio4"]')
+var questionCheckEl = document.querySelector("#message")
+var questionChoicebuttonEl = document.getElementsByTagName("input");
 
 
 // // saved-score
@@ -100,16 +106,13 @@ function startGame()
 
 function showQuestions() {
   var quest = questions[runningQuestion];
-  var r = document.querySelector('input');  
-
   quizQuestionEl.textContent = quest.question;
   console.log(quest.answer1);
-  document.querySelector('input[name="radio1"]').value = quest.answer1;
-  document.querySelector('input[name="radio2"]').value = quest.answer2;
-  document.querySelector('input[name="radio3"]').value = quest.answer3;
-  document.querySelector('input[name="radio4"]').value = quest.answer4;
+  questionInput1.value = quest.answer1;
+  questionInput2.value = quest.answer2;
+  questionInput3.value = quest.answer3;
+  questionInput4.value = quest.answer4;
 }
-
 
 var Anchors = document.getElementsByTagName("input");
 console.log(Anchors)
