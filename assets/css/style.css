@@ -133,7 +133,7 @@ justify-content: space-evenly;
   display:none;
 } 
 
-#startQuiz, #submit
+#startQuiz, #submit, #clearScore, #goBack, #highScore
 {
   font-size: 30px;
   border-radius: 12px;
