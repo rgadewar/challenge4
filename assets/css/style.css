@@ -60,8 +60,6 @@ header section {
   align-items: center;
 }
 
-/* input[type="button"], textarea { */
-/* .quizBtn, #startQuiz, #submit { */
 .button{
   background-color : #3b1097; 
   color: white;
@@ -74,6 +72,7 @@ header section {
   width: 200px;
   cursor: pointer;
 }
+
 .quizBtn{
   background-color : #3b1097; 
   color: white;
@@ -87,7 +86,7 @@ header section {
   cursor: pointer;
 }
 
-.quizBtn:hover, #startQuiz:hover, #submit:hover {
+.quizBtn:hover, #startQuiz:hover, #submit:hover, #clearScore:hover, #goBack:hover, #highScore:hover {
   background-color: #e30eea;
 }
 

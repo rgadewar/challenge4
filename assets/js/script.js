@@ -36,7 +36,7 @@ var questions = [{
 }];
 
 var timerEl = document.getElementById('countdown');
-var startQuizEl = document.getElementById('startQuiz');
+var startQuizEl = document.getElementById('quizDetails');
 // var startQuizLabelEl = document.getElementById('startQuizLabel');
 var mainEl = document.getElementById('main');
 var quizQuestionEl = document.getElementById('quizQuestion');
