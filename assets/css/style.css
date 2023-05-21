@@ -36,8 +36,8 @@ header {
 }
 
 h1 {
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
   font-size: 3rem;
   /* color:var(--text_color); */
 }
@@ -157,6 +157,13 @@ input[type="text"]:focus-within
   border: 1px solid rgb(99, 159, 25);
 }
 
+.text-center
+  {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.0;
+  }
+ 
 @media screen and (max-width: 768px) 
 {
   .container
@@ -179,12 +186,13 @@ input[type="text"]:focus-within
     border-right-style: none; 
     border-left-style: none; 
   }
-} 
 
-  .text-center
-  {
-    text-align: center;
-    font-size: 1.25rem;
-    line-height: 1.0;
+  header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    border-bottom: 2px solid var(--text_color);
+    font-size: 2.0rem;
   }
- 
+} 
