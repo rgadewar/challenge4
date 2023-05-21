@@ -180,37 +180,6 @@ input[type="text"]:focus-within
     border-right-style: none; 
     border-left-style: none; 
   }
-  .contactlinks
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 20px;
-  } 
-
-  .container li
-   {
-    margin-right: 20px;
-    list-style-type: none;
-    display: flex;
-    justify-content: center; 
-    font-size: 2.75rem;
-    line-height: 1.5;
-  }
-
-  header section ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 15px;
-    border-bottom: 2px solid var(--text_color);
-    font-size: 2.0rem;
-  }
-  
-  .grid-container-element
-  { 
-    grid-template-columns: 1fr;
-  }
 } 
 
   .text-center
