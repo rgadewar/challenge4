@@ -32,7 +32,7 @@ var questions = [{
   answer2: "other arrays",
   answer3: "booleans",
   answer4: "all of the above",
-  correct: "2061"
+  correct: "all of the above"
 }];
 
 var timerEl = document.getElementById('countdown');
