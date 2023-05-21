@@ -32,7 +32,7 @@ var questions = [{
   answer2: "other arrays",
   answer3: "booleans",
   answer4: "all of the above",
-  correct: "2061"
+  correct: "all of the above"
 }];
 
 var timerEl = document.getElementById('countdown');
@@ -48,6 +48,8 @@ var lastNameInput = document.querySelector("#last-name");
 // countdown();
 var startButton = document.getElementById("startQuiz");
 var submitButton = document.getElementById('submit');
+var highScoreButton = document.getElementById('highScore');
+
 
 
 // // saved-score
@@ -140,6 +142,11 @@ for (var i = 0; i < Anchors.length ; i++)
 
 signUpButton.addEventListener("click", function(event) {
   event.preventDefault();
+  if (firstNameInput.value === "") {
+    alert("plese enter initials");
+    return;
+  }
+
   var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
   var user1 =
   {
@@ -150,5 +157,9 @@ signUpButton.addEventListener("click", function(event) {
   highscores.push(user1);
   localStorage.setItem("highscores", JSON.stringify(highscores));
   playerformsEl.style.display="none";
+  window.location.href ='highscore.html'
+});
+
+highScoreButton.addEventListener("click", function(event) {
   window.location.href ='highscore.html'
 });

@@ -1,4 +1,7 @@
 var scoreView = document.querySelector(".scoresCard");
+var clearScoreButton = document.getElementById('clearScore');
+var goBackButton = document.getElementById('goBack');
+
 
 var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 
@@ -10,12 +13,28 @@ function init()
 }
 init();
 
-function renderMessage() {
-  for (var i =0; i<highscores.length; i++)
-  {
-    var listItem = document.createElement("li"); 
-    var details = document.createTextNode(highscores[i].firstName + " => " + highscores[i].score)
-    listItem.appendChild(details);
-    scoreView.appendChild(listItem);
-  }
-}
+function renderMessage() 
+{
+  highscores.sort((a, b) => {
+  return b.score - a.score;
+  })
+   for (var i =0; i<highscores.length; i++)
+   {
+     var listItem = document.createElement("li"); 
+
+    var details = document.createTextNode(highscores[i].firstName + " : " + highscores[i].score)
+     listItem.appendChild(details);
+     scoreView.appendChild(listItem);
+   }
+ }
+
+clearScoreButton.addEventListener("click", function(event)
+{
+  localStorage.removeItem("highscores");
+  window.location.reload();
+});
+
+goBackButton.addEventListener("click", function(event)
+{
+  window.location.href ='index.html'
+});
