@@ -166,3 +166,4 @@ signUpButton.addEventListener("click", function(event) {
 highScoreButton.addEventListener("click", function(event) {
   window.location.href ='highscore.html'
 });
+

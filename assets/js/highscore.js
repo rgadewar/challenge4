@@ -18,6 +18,7 @@ function renderMessage()
   highscores.sort((a, b) => {
   return b.score - a.score;
   })
+  
    for (var i =0; i<highscores.length; i++)
    {
      var listItem = document.createElement("li"); 
@@ -38,3 +39,5 @@ goBackButton.addEventListener("click", function(event)
 {
   window.location.href ='index.html'
 });
+
+
