@@ -149,7 +149,9 @@ signUpButton.addEventListener("click", function(event) {
     alert("plese enter initials");
     return;
   }
-
+   // Save user name in session storage
+  sessionStorage.setItem("currentuser", JSON.stringify(firstNameInput.value));
+  var userCurrent = JSON.parse(sessionStorage.getItem("currentuser"))
   var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
   var user1 =
   {
@@ -166,4 +168,3 @@ signUpButton.addEventListener("click", function(event) {
 highScoreButton.addEventListener("click", function(event) {
   window.location.href ='highscore.html'
 });
-
