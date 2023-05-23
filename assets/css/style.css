@@ -60,10 +60,23 @@ header section {
   align-items: center;
 }
 
-.button{
+button{
   background-color : #3b1097; 
   color: white;
-  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #73AD21;
+  text-align: center;
+  display:block;
+  width: 225px;
+  cursor: pointer;
+  font-size: 30px;
+  height: 45px;
+}
+
+input{
+  background-color : #3b1097; 
+  color: white;
+  height: 45px;
   border-radius: 10px;
   border: 2px solid #73AD21;
   text-align: center;
@@ -72,21 +85,12 @@ header section {
   width: 200px;
   cursor: pointer;
 }
-
-.quizBtn{
-  background-color : #3b1097; 
-  color: white;
-  height: 40px;
-  border-radius: 10px;
-  border: 2px solid #73AD21;
-  text-align: center;
-  display:block;
-  margin-bottom:20px;
-  width: 200px;
-  cursor: pointer;
+#player-name{
+  background-color : white; 
 }
 
-.quizBtn:hover, #startQuiz:hover, #submit:hover, #clearScore:hover, #goBack:hover, #highScore:hover {
+button:hover, .quizBtn:hover, #player-name:hover
+{
   background-color: #e30eea;
 }
 
@@ -104,7 +108,7 @@ footer {
 .container {
   width: 80%;
   margin-bottom: 0.5%;
-  margin-left: 15%;
+  margin-left: 2%;
   margin-right: 25%;
 }
 
@@ -115,7 +119,7 @@ footer {
   border-top-style: none;
   border-bottom-style: none;
   border-right-style: none; 
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 main {
@@ -131,14 +135,6 @@ justify-content: space-evenly;
   border-bottom: 1px solid black;
   display:none;
 } 
-
-#startQuiz, #submit, #clearScore, #goBack, #highScore
-{
-  font-size: 30px;
-  border-radius: 12px;
-  background-color: #3b1097;
-  color: white;
-}
 
 #player-form,.message{ display:none;}
 
@@ -187,7 +183,7 @@ input[type="text"]:focus-within
     border-left-style: none; 
   }
 
-  header section {
+  header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
