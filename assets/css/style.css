@@ -24,8 +24,8 @@ body {
 
 header {
   display: flex;
-  padding: 10px;
-  height: 150px;
+  padding: 0px;
+  height: 20%;
    /* Defines how to distribute the empty space between child elements */
   justify-content: space-between;
   align-items: center;
@@ -54,10 +54,10 @@ h4 {
   font-size: .5rem;
 }
 
-header section {
+/* header section {
   display: inline-block;
   align-items: center;
-}
+} */
 
 button{
   background-color : #3b1097; 
@@ -66,7 +66,7 @@ button{
   border: 2px solid #73AD21;
   text-align: center;
   display:block;
-  /* width: 225px; */
+  width: 225px;
   cursor: pointer;
   font-size: 25px;
   height: 45px;
@@ -81,7 +81,7 @@ input{
   text-align: center;
   display:block;
   /* margin-bottom:20px; */
-  /* width: 200px; */
+  width: 225px;
   cursor: pointer;
 }
 #player-name{
