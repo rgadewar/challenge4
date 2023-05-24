@@ -144,6 +144,7 @@ for (var i = 0; i < Anchors.length ; i++)
 }
 
 signUpButton.addEventListener("click", function(event) {
+  // signUpButton.on("click", function(event){
   event.preventDefault();
   if (firstNameInput.value === "") {
     alert("plese enter initials");

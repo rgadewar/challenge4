@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   font-family: -apple-system, Calibri,  BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -38,7 +38,7 @@ header {
 h1 {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2rem;
   /* color:var(--text_color); */
 }
 
@@ -55,8 +55,7 @@ h4 {
 }
 
 header section {
-  display: flex;
-  float: right;
+  display: inline-block;
   align-items: center;
 }
 
@@ -67,9 +66,9 @@ button{
   border: 2px solid #73AD21;
   text-align: center;
   display:block;
-  width: 225px;
+  /* width: 225px; */
   cursor: pointer;
-  font-size: 30px;
+  font-size: 25px;
   height: 45px;
 }
 
@@ -94,6 +93,10 @@ button:hover, .quizBtn:hover, #player-name:hover
   background-color: #e30eea;
 }
 
+#player-form{
+  display: inline-block;
+
+}
 footer {
   display: flex;
   justify-content: center;
@@ -110,7 +113,12 @@ footer {
   margin-bottom: 0.5%;
   margin-left: 2%;
   margin-right: 25%;
+  display: flex;
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
 }
+
 
 .float-child-right {
   width: 100%;
@@ -166,6 +174,7 @@ input[type="text"]:focus-within
   {
     display:flex;
     flex-direction: column;
+    justify-content: center;
   }
   .float-child-left
   {
@@ -191,4 +200,7 @@ input[type="text"]:focus-within
     border-bottom: 2px solid var(--text_color);
     font-size: 2.0rem;
   }
+  button:hover {
+    background-color: blue;
+}
 } 
