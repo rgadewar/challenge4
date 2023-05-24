@@ -24,8 +24,10 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   padding: 10px;
-  height: 200px;
+  height: 175px;
    /* Defines how to distribute the empty space between child elements */
   justify-content: space-between;
   align-items: center;
@@ -65,7 +67,7 @@ button{
   border-radius: 15px;
   border: 2px solid #73AD21;
   text-align: center;
-  display:block;
+  /* display:block; */
   width: 225px;
   cursor: pointer;
   font-size: 25px;
@@ -144,7 +146,8 @@ justify-content: space-evenly;
   display:none;
 } 
 
-#player-form,.message{ display:none;}
+#player-form,.message{
+   display:none;}
 
 a {
   color: #d26bbc;
@@ -157,7 +160,7 @@ a:hover {
 
 input[type="text"]:focus-within
 {
-  background-color: #d26bbc;
+  background-color: white;
   border: 1px solid rgb(99, 159, 25);
 }
 
@@ -173,8 +176,9 @@ input[type="text"]:focus-within
   .container
   {
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .float-child-left
   {
@@ -194,6 +198,7 @@ input[type="text"]:focus-within
 
   header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 15px;
@@ -201,6 +206,6 @@ input[type="text"]:focus-within
     font-size: 2.0rem;
   }
   button:hover {
-    background-color: blue;
+    color: #d26bbc;
 }
 } 
