@@ -25,9 +25,9 @@ body {
 header {
   display: flex;
   /* padding: 60px; */
-  /* height: 150px; */
+  height: 150px;
    /* Defines how to distribute the empty space between child elements */
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--dark);
   /* padding: 5px 5px; */
@@ -80,8 +80,8 @@ input{
   border: 2px solid #73AD21;
   text-align: center;
   display:block;
-  margin-bottom:20px;
-  width: 200px;
+  /* margin-bottom:20px; */
+  /* width: 200px; */
   cursor: pointer;
 }
 #player-name{
