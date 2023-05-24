@@ -67,7 +67,7 @@ button{
   border: 2px solid #73AD21;
   text-align: center;
   display:block;
-  width: 225px;
+  /* width: 225px; */
   cursor: pointer;
   font-size: 30px;
   height: 45px;
@@ -94,6 +94,10 @@ button:hover, .quizBtn:hover, #player-name:hover
   background-color: #e30eea;
 }
 
+#player-form{
+  display: inline-block;
+
+}
 footer {
   display: flex;
   justify-content: center;
@@ -110,7 +114,12 @@ footer {
   margin-bottom: 0.5%;
   margin-left: 2%;
   margin-right: 25%;
+  display: flex;
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
 }
+
 
 .float-child-right {
   width: 100%;
@@ -191,4 +200,7 @@ input[type="text"]:focus-within
     border-bottom: 2px solid var(--text_color);
     font-size: 2.0rem;
   }
+  button:hover {
+    background-color: blue;
+}
 } 
