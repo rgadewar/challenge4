@@ -24,8 +24,8 @@ body {
 
 header {
   display: flex;
-  padding: 0px;
-  height: 20%;
+  padding: 10px;
+  height: 200px;
    /* Defines how to distribute the empty space between child elements */
   justify-content: space-between;
   align-items: center;
@@ -80,7 +80,7 @@ input{
   border: 2px solid #73AD21;
   text-align: center;
   display:block;
-  /* margin-bottom:20px; */
+  margin-bottom:20px;
   width: 225px;
   cursor: pointer;
 }
