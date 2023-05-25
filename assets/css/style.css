@@ -24,8 +24,8 @@ body {
 
 header {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-wrap: wrap;
+  flex-direction: row; */
   padding: 10px;
   height: 175px;
    /* Defines how to distribute the empty space between child elements */
@@ -56,10 +56,6 @@ h4 {
   font-size: .5rem;
 }
 
-/* header section {
-  display: inline-block;
-  align-items: center;
-} */
 
 button{
   background-color : #3b1097; 
@@ -111,7 +107,7 @@ footer {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin-bottom: 0.5%;
   margin-left: 2%;
   margin-right: 25%;
@@ -195,12 +191,12 @@ input[type="text"]:focus-within
     border-right-style: none; 
     border-left-style: none; 
   }
-
+  
   header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin-left: 15px;
     border-bottom: 2px solid var(--text_color);
@@ -208,5 +204,8 @@ input[type="text"]:focus-within
   }
   button:hover {
     color: #d26bbc;
+}
+.scoresCard{
+  display: inline;
 }
 } 
