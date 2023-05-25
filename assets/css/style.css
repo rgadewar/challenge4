@@ -89,6 +89,7 @@ input{
 button:hover, .quizBtn:hover, #player-name:hover
 {
   background-color: #e30eea;
+  color: black
 }
 
 #player-form{
@@ -202,8 +203,13 @@ input[type="text"]:focus-within
     border-bottom: 2px solid var(--text_color);
     font-size: 2.0rem;
   }
-  button:hover {
+  /* button:hover {
     color: #d26bbc;
+} */
+button:hover, .quizBtn:hover, #player-name:hover
+{
+  background-color: #e30eea;
+  color: black
 }
 .scoresCard{
   display: inline;
