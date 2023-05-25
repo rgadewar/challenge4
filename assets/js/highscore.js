@@ -33,13 +33,13 @@ function renderMessage()
    for (var i =0; i<highscores.length; i++)
    {
     // to show current user score
-    if(highscores[i].firstName == userCurrent)
-    {
+    // if(highscores[i].firstName == userCurrent)
+    // {
       var listItem = document.createElement("li"); 
       var details = document.createTextNode(highscores[i].firstName + " : " + highscores[i].score)
       listItem.appendChild(details);
       scoreView.appendChild(listItem);
-   }
+  //  }
   }
  }
 
